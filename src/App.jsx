@@ -1,34 +1,39 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+
+// Pages
+import Home from '@/pages/Home'
+import About from '@/pages/About'
+import Donations from '@/pages/Donations'
+import DonationsThankYou from '@/pages/DonationsThankYou'
+import Partnerships from '@/pages/Partnerships'
+import PartnershipsThankYou from '@/pages/PartnershipsThankYou'
+import Registration from '@/pages/Registration'
+import RegistrationThankYou from '@/pages/RegistrationThankYou'
+import AnnualFestival from '@/pages/AnnualFestival'
+import BiMonthly from '@/pages/BiMonthly'
+import LiteracyLibraries from '@/pages/LiteracyLibraries'
+import CreativeEconomy from '@/pages/CreativeEconomy'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <Router>
+      <div className="min-h-screen bg-background text-text-primary">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/donations" element={<Donations />} />
+          <Route path="/donations/thank-you" element={<DonationsThankYou />} />
+          <Route path="/partnerships" element={<Partnerships />} />
+          <Route path="/partnerships/thank-you" element={<PartnershipsThankYou />} />
+          <Route path="/register" element={<Registration />} />
+          <Route path="/registration/thank-you" element={<RegistrationThankYou />} />
+          <Route path="/annual-festival" element={<AnnualFestival />} />
+          <Route path="/bi-monthly" element={<BiMonthly />} />
+          <Route path="/literacy-libraries" element={<LiteracyLibraries />} />
+          <Route path="/creative-economy" element={<CreativeEconomy />} />
+        </Routes>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    </Router>
   )
 }
 

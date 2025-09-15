@@ -1,3 +1,232 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* ---------------------------
+   Font Faces (ensure files are in public/fonts/)
+   --------------------------- */
+@font-face {
+  font-family: "Create Display";
+  src: url("/fonts/CreateDisplay-ExtraBold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Create Display";
+  src: url("/fonts/CreateDisplay-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Create Display";
+  src: url("/fonts/CreateDisplay-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Create Display";
+  src: url("/fonts/CreateDisplay-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ---------------------------
+   Base Styles
+   --------------------------- */
+html,
+body,
+#root {
+  height: 100%;
+  background: white;
+}
+
+body {
+  font-family: "Create Display", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #40000B;
+}
+
+/* Focus styles for accessibility */
+:focus {
+  outline: none;
+}
+
+:focus-visible {
+  outline: 3px solid rgba(66, 153, 225, 0.35);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+/* ---------------------------
+   Component Layer - Custom Classes
+   --------------------------- */
+
+/* Button Components */
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center w-full max-w-[380px] h-[51px] px-8 py-4 
+           rounded-button bg-gradient-accent text-button-text font-display font-bold 
+           text-button-mobile md:text-button-desktop md:max-w-[211px] md:h-[59px] 
+           border-none cursor-pointer transition-all duration-150 ease-out
+           hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center w-full max-w-[380px] h-[59px] px-8 py-4 
+           rounded-button bg-transparent text-primary border-2 border-primary font-display 
+           font-bold text-button-mobile md:text-button-desktop md:max-w-[192px] 
+           cursor-pointer transition-all duration-150 ease-out
+           hover:bg-primary hover:text-white active:scale-95;
+  }
+
+  .btn-primary-normal {
+    @apply font-medium;
+  }
+}
+
+/* Program List Components */
+@layer components {
+  .program-row {
+    @apply grid grid-cols-[1fr_auto_1fr_auto] items-center gap-4 p-4 md:px-6 md:py-5 
+           no-underline text-inherit transition-colors duration-150 ease-out
+           hover:bg-primary/5 focus:bg-primary/5;
+  }
+
+  .program-row-border {
+    @apply border-t border-gray-100;
+  }
+
+  .program-left-label {
+    @apply text-left font-display font-medium text-text-secondary text-sm;
+  }
+
+  .program-avatar-wrap {
+    @apply flex justify-center items-center;
+  }
+
+  .program-avatar {
+    @apply block w-[120px] h-[80px] object-cover rounded-xl shadow-program 
+           transition-transform duration-200 ease-out
+           group-hover:scale-105;
+  }
+
+  .program-right-content {
+    @apply flex flex-col justify-center items-start pl-2;
+  }
+
+  .program-title {
+    @apply font-display font-extrabold text-primary text-lg leading-tight;
+  }
+
+  .program-date {
+    @apply mt-1 font-display font-medium text-text-secondary text-sm;
+  }
+
+  .program-arrow {
+    @apply flex items-center justify-center pl-2 text-primary 
+           transition-all duration-200 ease-out
+           group-hover:translate-x-1 group-hover:-translate-y-1 group-hover:scale-105;
+  }
+}
+
+/* Card Components */
+@layer components {
+  .card-root {
+    @apply w-full max-w-[380px] h-[403px] rounded-card bg-surface 
+           overflow-hidden shadow-card;
+  }
+
+  .card-image {
+    @apply w-full h-[260px] md:h-[300px] object-cover transition-transform 
+           duration-300 ease-out group-hover:scale-105;
+  }
+}
+
+/* Podcast Components */
+@layer components {
+  .podcast-card {
+    @apply relative w-full h-[200px] md:h-[250px] rounded-lg overflow-hidden 
+           group-hover:scale-[1.02] transition-transform duration-300 ease-out;
+  }
+
+  .podcast-card-image {
+    @apply w-full h-full object-cover;
+  }
+
+  .podcast-card-overlay {
+    @apply absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent;
+  }
+
+  .podcast-card-content {
+    @apply absolute inset-0 flex flex-col justify-between p-4 md:p-6;
+  }
+
+  .podcast-play-button {
+    @apply self-end flex items-center justify-center w-12 h-12 rounded-full 
+           bg-white/20 backdrop-blur-sm border border-white/30 
+           transition-all duration-200 ease-out
+           hover:bg-white/30 hover:scale-110 active:scale-95;
+  }
+}
+
+/* Hero Components */
+@layer components {
+  .hero-section {
+    @apply relative w-full bg-white overflow-hidden;
+  }
+
+  .hero-image {
+    @apply absolute inset-0 w-full h-full object-cover;
+  }
+
+  .hero-overlay {
+    @apply absolute inset-0 bg-gradient-to-t from-black/55 to-transparent;
+  }
+
+  .hero-content {
+    @apply relative z-10 min-h-[420px] md:min-h-[520px] 
+           flex items-center px-5 py-12 md:px-20 md:py-20;
+  }
+
+  .hero-text-content {
+    @apply max-w-4xl text-white;
+  }
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 767px) {
+  .program-row {
+    @apply grid-cols-[1fr_80px_1fr_auto] gap-3 p-3;
+  }
+
+  .program-avatar {
+    @apply w-[80px] h-[54px] rounded-lg;
+  }
+
+  .program-title {
+    @apply text-base;
+  }
+
+  .program-left-label {
+    @apply text-xs;
+  }
+}
+
+/* Utility Classes */
+@layer utilities {
+  .container-max {
+    @apply max-w-container mx-auto px-5 md:px-6;
+  }
+
+  .text-gradient {
+    @apply bg-gradient-accent bg-clip-text text-transparent;
+  }
+}
