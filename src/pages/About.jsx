@@ -4,17 +4,21 @@ import Footer from '@/components/layout/Footer'
 import Container from '@/components/layout/Container'
 
 const stats = [
-  { id: 1, label: "Years of activity", value: "1" },
-  { id: 2, label: "Events hosted", value: "20+" },
-  { id: 3, label: "Books donated", value: "8,000+" },
-  { id: 4, label: "Communities reached", value: "15+" }
+  { id: 1, label: "Years of activity", value: "4" },
+  { id: 2, label: "Events hosted", value: "8+" },
+  { id: 3, label: "Number of Participants", value: "1,000+" },
+  // { id: 4, label: "Communities reached", value: "15+" }
 ];
 
 const timeline = [
-  { year: "2024", text: "IbaFest concept and community consultations" },
-  { year: "2024 Q4", text: "Pilot events and library support projects" },
-  { year: "2025", text: "Inaugural IbaFest — week-long celebration in Ibadan" },
-  { year: "2026+", text: "Year-round programming & regional outreach" }
+  { year: "2021", text: "Concept and Community Consultations" },
+  { year: "2022", text: "Pilot Events" },
+  { year: "2023", text: "Rebuilding" },
+  { year: "2024", text: "Planning and Strategy" },
+  { year: "2025 Q1-Q2", text: "Book Reading and Conservation" },
+  { year: "2025 Q1-Q2", text: "Town and Gown Interaction" },
+  { year: "2025 Q3-Q4", text: "Festival Prelude Events" },
+  { year: "2025 Q4", text: "Inaugural Festival" }
 ];
 
 const team = [
@@ -86,7 +90,7 @@ export default function About() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
             <div>
               <h1 className="font-display font-extrabold text-[40px] leading-[42.5px] text-[var(--color-primary)] mb-4">
-                About Ìbà Fest
+                About IbaFest
               </h1>
               <p className="text-[20px] leading-[24px] text-[var(--color-text-secondary)] max-w-3xl">
                 Ìbà Fest (Ibadan Book & Arts Festival) celebrates storytelling,
@@ -99,20 +103,16 @@ export default function About() {
 
             <div>
               <div className="bg-white rounded-lg p-6 shadow-sm">
-                <h3 className="font-semibold text-lg mb-3">Our mission</h3>
+                <h3 className="font-semibold text-lg mb-3">Our Vision</h3>
                 <p className="text-[var(--color-text-secondary)]">
-                  To expand access to books, support creative livelihoods, and
-                  celebrate African stories that shape education and community.
+                  To be Africa’s most influential cultural platform for transforming society through literature, arts, education, and creative innovation.
                 </p>
 
                 <div className="mt-6">
-                  <h4 className="font-semibold text-sm uppercase text-[var(--color-primary)] mb-2">Core values</h4>
-                  <ul className="text-[var(--color-text-secondary)] space-y-2">
-                    <li>• Community empowerment</li>
-                    <li>• Literary excellence</li>
-                    <li>• Accessibility & inclusion</li>
-                    <li>• Cultural legacy & innovation</li>
-                  </ul>
+                  <h3 className="font-semibold text-lg mb-3">Our Mission</h3>
+                <p className="text-[var(--color-text-secondary)]">
+                  We celebrate stories, empower creativity, and amplify voices to strengthen literacy, foster innovation, grow the creative economy, and advance equitable access to education and cultural resources.
+                </p>
                 </div>
               </div>
             </div>

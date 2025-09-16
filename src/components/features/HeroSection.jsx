@@ -3,6 +3,7 @@ import { cn } from '@/utils/cn'
 
 const HeroSection = ({
   title,
+  titlee,
   subtitle,
   description,
   image,
@@ -58,21 +59,29 @@ const HeroSection = ({
           <div className="hero-text-content">
             {/* Title */}
             {title && (
-              <h1 className="font-display font-extrabold text-3xl md:text-4xl lg:text-5xl leading-tight mb-4">
+              <h1 className="font-display font-extrabold text-3xl md:text-4xl lg:text-5xl text-primary leading-tight mb-4">
                 {title}
               </h1>
+              
+            )}
+
+            {titlee && (
+              <h2 className="font-display text-2xl md:text-4xl font-black text-white uppercase mb-4">
+               {titlee}
+              </h2>
+              
             )}
 
             {/* Subtitle */}
             {subtitle && (
-              <h2 className="font-display font-bold text-xl md:text-2xl mb-4 text-white/90">
+              <p className="text-sm md:text-base lg:text-lg leading-relaxed mb-8 text-white/90 max-w-3xl">
                 {subtitle}
-              </h2>
+              </p>
             )}
 
             {/* Description */}
             {description && (
-              <p className="text-sm md:text-base lg:text-lg leading-relaxed mb-8 text-white/90 max-w-3xl">
+              <p className="text-sm md:text-base lg:text-lg leading-relaxed mb-8 text-text-secondary/90 max-w-3xl">
                 {description}
               </p>
             )}

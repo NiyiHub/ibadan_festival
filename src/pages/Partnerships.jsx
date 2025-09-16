@@ -11,9 +11,8 @@ const Partnerships = () => {
 
       {/* Hero Section */}
       <HeroSection
-        title="Partner With Us"
-        subtitle="Collaborate for Cultural Impact"
-        description="Join us in celebrating African literature and arts. We're looking for organizations, institutions, and individuals who share our vision of cultural development through storytelling and creative expression."
+        titlee="Partner With Us"
+        subtitle="Explore sponsorship, media, and collaboration opportunities with IbaFest."
         image="/images/donate-hero.jpg"
         variant="centered"
         overlay="dark"

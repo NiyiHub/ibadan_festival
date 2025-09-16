@@ -11,9 +11,8 @@ const Donations = () => {
 
       {/* Hero Section */}
       <HeroSection
-        title="Donate a Book"
-        subtitle="Support Literacy & Community Development"
-        description="Your gift helps us buy books and resources for communities and schools across Nigeria. Every donation makes a direct impact on expanding access to literature and education."
+        titlee="Donate a Book"
+        subtitle="Contribute to support our quest to be Africa’s most influential cultural platform for transforming society through literature, arts, education, and creative innovation. "
         image="/images/donate-hero.jpg"
         variant="centered"
         overlay="dark"
