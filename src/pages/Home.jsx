@@ -100,15 +100,16 @@ const Home = () => {
     <div className="min-h-screen bg-background text-text-primary">
       <Navbar />
 
-      {/* Hero Section */}
+      {/* Hero Section - Custom Alignment: title & description left-aligned but center-positioned */}
       <HeroSection
         title={hero.title}
         description={hero.body}
-        image={hero.heroImage}
+        image={null}
         ctaText={hero.ctaText}
         ctaHref="/register"
         variant="default"
         overlay="gradient"
+        customAlignment={true}
       />
 
       {/* Main Content */}

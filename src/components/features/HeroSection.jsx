@@ -12,7 +12,8 @@ const HeroSection = ({
   onCtaClick,
   variant = 'default', // 'default', 'centered', 'minimal'
   overlay = 'gradient', // 'gradient', 'dark', 'light', 'none'
-  className = ''
+  className = '',
+  customAlignment = false // New prop to enable custom alignment
 }) => {
   const overlayClasses = {
     gradient: 'bg-gradient-to-t from-black/60 via-black/20 to-transparent',
@@ -54,41 +55,56 @@ const HeroSection = ({
       )}
 
       {/* Content */}
-      <div className={cn('hero-content', contentAlignment[variant])}>
-        <div className="max-w-4xl">
+      <div className={cn(
+        'hero-content',
+        customAlignment ? 'items-center' : contentAlignment[variant]
+      )}>
+        <div className="max-w-4xl mx-auto w-full">
           <div className="hero-text-content">
-            {/* Title */}
-            {title && (
-              <h1 className="font-display font-extrabold text-3xl md:text-4xl lg:text-5xl text-primary leading-tight mb-4">
-                {title}
-              </h1>
-              
-            )}
+            {/* Title and Description - Left aligned but centered positioned */}
+            <div className={cn(
+              customAlignment ? 'text-left' : '',
+              'w-full'
+            )}>
+              {/* Title */}
+              {title && (
+                <h1 className="font-display font-extrabold text-3xl md:text-4xl lg:text-5xl text-primary leading-tight mb-4">
+                  {title}
+                </h1>
+              )}
 
-            {titlee && (
-              <h2 className="font-display text-2xl md:text-4xl font-black text-white uppercase mb-4">
-               {titlee}
-              </h2>
-              
-            )}
+              {/* Description */}
+              {description && (
+                <p className="text-sm md:text-base lg:text-lg leading-relaxed mb-8 text-text-secondary/90 max-w-3xl">
+                  {description}
+                </p>
+              )}
+            </div>
 
-            {/* Subtitle */}
-            {subtitle && (
-              <p className="text-sm md:text-base lg:text-lg leading-relaxed mb-8 text-white/90 max-w-3xl">
-                {subtitle}
-              </p>
-            )}
+            {/* Titlee and Subtitle - Center aligned and positioned */}
+            <div className={cn(
+              customAlignment ? 'text-center' : '',
+              'w-full'
+            )}>
+              {titlee && (
+                <h2 className="font-display text-2xl md:text-4xl font-black text-white uppercase mb-4">
+                  {titlee}
+                </h2>
+              )}
 
-            {/* Description */}
-            {description && (
-              <p className="text-sm md:text-base lg:text-lg leading-relaxed mb-8 text-text-secondary/90 max-w-3xl">
-                {description}
-              </p>
-            )}
+              {/* Subtitle */}
+              {subtitle && (
+                <p className="text-sm md:text-base lg:text-lg leading-relaxed mb-8 text-white/90 max-w-3xl mx-auto">
+                  {subtitle}
+                </p>
+              )}
+            </div>
 
             {/* CTA Button */}
             {(ctaText && (ctaHref || onCtaClick)) && (
-              <div className="flex justify-start">
+              <div className={cn(
+                customAlignment ? 'flex justify-center' : 'flex justify-start'
+              )}>
                 <Button
                   variant="primary"
                   normalWeight
