@@ -2,8 +2,8 @@ import React from "react";
 import Container from "../components/Container";
 import ProgramList from "../components/ProgramList";
 import TicketPromo from "../components/TicketPromo";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import Navbar from '@/components/layout/Navbar'
+import Footer from '@/components/layout/Footer'
 
 import { programs } from "../data/mockData";
 
