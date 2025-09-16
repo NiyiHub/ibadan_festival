@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
-import Container from "../components/Container";
+import Container from '@/components/layout/Container'
 
 const stats = [
   { id: 1, label: "Years of activity", value: "1" },

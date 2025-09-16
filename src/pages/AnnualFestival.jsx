@@ -1,11 +1,10 @@
 import React from "react";
-import Container from "../components/Container";
-import ProgramList from "../components/ProgramList";
-import TicketPromo from "../components/TicketPromo";
+import Container from '@/components/layout/Container'
+import ProgramList from "@/components/features/ProgramComponents";
 import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
 
-import { programs } from "../data/mockData";
+// import { programs } from "../data/mockData";
 
 export default function AnnualFestival() {
   return (
@@ -73,9 +72,9 @@ export default function AnnualFestival() {
           everyone.
         </p>
 
-        <div className="mt-12">
+        {/* <div className="mt-12">
           <ProgramList items={programs} />
-        </div>
+        </div> */}
 
         <div className="mt-8 max-w-[720px] mx-auto w-full">
           <a href="/register" className="block w-full">
