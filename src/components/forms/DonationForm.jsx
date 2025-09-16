@@ -5,13 +5,12 @@ import Input from '@/components/ui/Input'
 import Card from '@/components/ui/Card'
 import { useForm } from '@/hooks/useForm'
 import { submitDonation } from '@/services/donationService'
-import { DEFAULTS, VALIDATION_MESSAGES } from '@/constants'
-import { cn } from '@/utils/cn'
+import { VALIDATION_MESSAGES } from '@/constants'
+// import { cn } from '@/utils/cn'
 
 const DonationForm = () => {
   const navigate = useNavigate()
-  const [selectedAmount, setSelectedAmount] = useState(5000)
-  const [customAmount, setCustomAmount] = useState('')
+  const [amount, setAmount] = useState('')
 
   const validationRules = {
     firstName: { required: true },
@@ -52,31 +51,25 @@ const DonationForm = () => {
   }, validationRules)
 
   const getEffectiveAmount = () => {
-    return customAmount ? Number(customAmount) : selectedAmount
+    return Number(amount) || 0
   }
 
-  const handleAmountSelect = (amount) => {
-    setSelectedAmount(amount)
-    setCustomAmount('')
-  }
-
-  const handleCustomAmountChange = (e) => {
+  const handleAmountChange = (e) => {
     const value = e.target.value
-    setCustomAmount(value)
-    setSelectedAmount(null)
+    setAmount(value)
   }
 
   const onSubmit = async (formData) => {
-    const amount = getEffectiveAmount()
+    const donationAmount = getEffectiveAmount()
     
-    if (!amount || amount < 100) {
+    if (!donationAmount || donationAmount < 100) {
       setFormErrors({ amount: VALIDATION_MESSAGES.MIN_AMOUNT })
       return
     }
 
     const payload = {
-      amount,
-      currency: DEFAULTS.CURRENCY,
+      amount: donationAmount,
+      currency: 'NGN', // Direct currency value instead of DEFAULTS.CURRENCY
       donor: {
         firstName: formData.firstName,
         lastName: formData.lastName,
@@ -113,38 +106,24 @@ const DonationForm = () => {
           e.preventDefault()
           handleSubmit(onSubmit)
         }}>
-          {/* Amount Selection */}
+          {/* Amount Input */}
           <div className="mb-8">
             <label className="block text-sm font-semibold text-gray-700 mb-4">
-              Select Donation Amount
+              Donation Amount (NGN)
             </label>
-            
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-4">
-              {DEFAULTS.DONATION_AMOUNTS.map((amount) => (
-                <button
-                  key={amount}
-                  type="button"
-                  onClick={() => handleAmountSelect(amount)}
-                  className={cn(
-                    'px-4 py-3 rounded-lg border-2 font-semibold transition-all',
-                    selectedAmount === amount && !customAmount
-                      ? 'bg-primary text-white border-primary shadow-lg'
-                      : 'bg-white text-gray-700 border-gray-200 hover:border-primary'
-                  )}
-                >
-                  ₦{amount.toLocaleString()}
-                </button>
-              ))}
-            </div>
             
             <Input
               type="number"
               min="100"
-              placeholder="Enter custom amount (NGN)"
-              value={customAmount}
-              onChange={handleCustomAmountChange}
+              placeholder="Enter donation amount"
+              value={amount}
+              onChange={handleAmountChange}
               error={errors.amount}
+              required
             />
+            {/* <p className="text-xs text-gray-500 mt-2">
+              Minimum donation amount is ₦100
+            </p> */}
           </div>
 
           {/* Personal Information */}

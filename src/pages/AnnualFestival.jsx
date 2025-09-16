@@ -1,6 +1,6 @@
 import React from "react";
 import Container from '@/components/layout/Container'
-import ProgramList from "@/components/features/ProgramComponents";
+// import ProgramList from "@/components/features/ProgramComponents";
 import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
 
