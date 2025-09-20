@@ -13,6 +13,7 @@ export const API_CONFIG = {
     EVENTS: '/api/content/events/',
     PROGRAMS: '/api/content/programs/',
     PODCASTS: '/api/content/podcasts/',
+    HIGHLIGHTS: '/api/content/highlights/',
     
     // Forms
     DONATIONS: '/api/forms/donations/',

@@ -13,6 +13,8 @@ import AnnualFestival from '@/pages/AnnualFestival'
 import BiMonthly from '@/pages/BiMonthly'
 import LiteracyLibraries from '@/pages/LiteracyLibraries'
 import CreativeEconomy from '@/pages/CreativeEconomy'
+import Highlights from '@/pages/Highlights'
+import HighlightDetail from '@/pages/HighlightDetail'
 
 function App() {
   return (
@@ -31,6 +33,8 @@ function App() {
           <Route path="/bi-monthly" element={<BiMonthly />} />
           <Route path="/literacy-libraries" element={<LiteracyLibraries />} />
           <Route path="/creative-economy" element={<CreativeEconomy />} />
+          <Route path="/highlights" element={<Highlights />} />
+          <Route path="/highlights/:slug" element={<HighlightDetail />} />
         </Routes>
       </div>
     </Router>

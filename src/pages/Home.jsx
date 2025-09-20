@@ -6,9 +6,11 @@ import Container from '@/components/layout/Container'
 import HeroSection from '@/components/features/HeroSection'
 import { EventHeroCard, EventGrid } from '@/components/features/EventComponents'
 import { ProgramList } from '@/components/features/ProgramComponents'
+import { HighlightsGrid } from '@/components/features/HighlightComponents'
 import PodcastCard from '@/components/features/PodcastCard'
 import Button from '@/components/ui/Button'
 import { getHero, getEvents, getPrograms, getPodcasts } from '@/services/api'
+import { getHighlights } from '@/services/highlightsService'
 
 const TicketPromo = () => (
   <section className="mt-12">
@@ -39,22 +41,25 @@ const Home = () => {
   const [events, setEvents] = useState(null)
   const [programs, setPrograms] = useState([])
   const [podcasts, setPodcasts] = useState([])
+  const [highlights, setHighlights] = useState([])
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
     const loadData = async () => {
       try {
-        const [heroData, eventsData, programsData, podcastsData] = await Promise.all([
+        const [heroData, eventsData, programsData, podcastsData, highlightsData] = await Promise.all([
           getHero(),
           getEvents(),
           getPrograms(),
-          getPodcasts()
+          getPodcasts(),
+          getHighlights({ limit: 3 })
         ])
         
         setHero(heroData)
         setEvents(eventsData)
         setPrograms(programsData)
         setPodcasts(podcastsData)
+        setHighlights(highlightsData.data || [])
       } catch (error) {
         console.error('Failed to load page data:', error)
       } finally {
@@ -165,6 +170,18 @@ const Home = () => {
               </Button>
             </div>
           </section>
+
+          {/* Highlights Section */}
+          {highlights.length > 0 && (
+            <section className="mb-16">
+              <HighlightsGrid
+                highlights={highlights}
+                title="Latest Highlights"
+                showViewAll={true}
+                maxItems={3}
+              />
+            </section>
+          )}
 
           {/* Podcast Section */}
           {podcasts.length > 0 && (
