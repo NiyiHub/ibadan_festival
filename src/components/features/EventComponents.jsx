@@ -31,7 +31,7 @@ export const EventHeroCard = ({
         </div>
       </div>
     </Link>
-  )
+  ) 
 }
 
 // Event Card Component

@@ -133,8 +133,8 @@ export const getEvents = async () => {
     return {
       heroEvent: {
         title: "ANNUAL FESTIVAL",
-        subtitle: "15th - 26th of June",
-        image: "/images/annual-festival.png",
+        subtitle: "24th - 25th of October",
+        image: "/images/annual-festival.jpg",
         slug: "annual-festival"
       },
       grid: [

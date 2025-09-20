@@ -11,9 +11,9 @@ const Registration = () => {
 
       {/* Hero Section */}
       <HeroSection
-        title="Register for IbaFest 2025"
-        subtitle="The Inaugural Edition"
-        description="Secure your wristband for a week-long celebration of African literature, creativity, and cultural dialogue in the historic city of Ibadan. Join writers, artists, educators, and change-makers from across Nigeria and beyond."
+        titlee="Register for IbaFest 2025"
+        // subtitle="The Inaugural Edition"
+        subtitle="Secure your wristband for a 48 hours long celebration of African literature, creativity, and cultural dialogue in the historic city of Ibadan. Join writers, artists, educators, and change-makers from across Nigeria and beyond."
         image="/images/donate-hero.jpg"
         variant="centered"
         overlay="dark"
@@ -29,7 +29,7 @@ const Registration = () => {
       </section>
 
       {/* Event Details */}
-      <section className="py-16 bg-gray-50">
+      {/* <section className="py-16 bg-gray-50">
         <Container>
           <div className="max-w-6xl mx-auto">
             <h2 className="font-display font-bold text-2xl md:text-3xl text-primary text-center mb-12">
@@ -93,10 +93,10 @@ const Registration = () => {
             </div>
           </div>
         </Container>
-      </section>
+      </section> */}
 
       {/* Festival Information */}
-      <section className="py-16">
+      {/* <section className="py-16">
         <Container>
           <div className="max-w-4xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -143,7 +143,7 @@ const Registration = () => {
             </div>
           </div>
         </Container>
-      </section>
+      </section> */}
 
       <Footer />
     </div>

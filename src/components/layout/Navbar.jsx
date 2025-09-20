@@ -36,7 +36,7 @@ const Navbar = () => {
 
               {/* Register Button */}
               <Link
-                to="/register"
+                to="#register"
                 className="inline-block px-5 py-2 rounded-full bg-primary text-white font-bold text-sm transition-all hover:bg-primary-dark hover:shadow-lg hover:-translate-y-0.5"
               >
                 Register
@@ -47,7 +47,7 @@ const Navbar = () => {
             <div className="flex items-center gap-3 md:hidden">
               {/* Mobile Register Button */}
               <Link
-                to="/register"
+                to="#register"
                 className="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-primary text-white"
               >
                 Register

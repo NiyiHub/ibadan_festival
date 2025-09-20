@@ -23,27 +23,57 @@ const timeline = [
 
 const team = [
   {
-    name: "Niyi Black",
+    name: "Servio Gbadamosi",
     role: "Founder & Festival Director",
-    img: "/images/about-team-1.jpg"
+    img: "/images/Servio_Gbadamosi.jpg"
   },
   {
-    name: "Amina Olu",
+    name: "Kayode Sanni",
     role: "Program Curator",
-    img: "/images/about-team-2.jpg"
+    img: "/images/Kayode_Sanni.jpg"
   },
   {
-    name: "Chinedu Okoro",
+    name: "Solomon Muyiwa Ogungbenro",
     role: "Community & Partnerships",
-    img: "/images/about-team-3.jpg"
+    img: "/images/Solomon_Muyiwa_Ogungbenro.jpg"
+  },
+  {
+    name: "Temiloluwa Peculiar Ibitomi",
+    role: "Community & Partnerships",
+    img: "/images/Temiloluwa_Peculiar_Ibitomi.jpg"
+  },
+  {
+    name: "Su'eddie Vershima Agema",
+    role: "Team Member",
+    img: "/images/Su'eddie_Vershima_Agema.jpg"
+  },
+  {
+    name: "Rukayat Amudah",
+    role: "Team Member",
+    img: "/images/Rukayat_Amudah.jpg"
+  },
+  {
+    name: "Ocheni Kazeem Oneshojo",
+    role: "Team Member",
+    img: "/images/Ocheni_Kazeem_Oneshojo.jpg"
+  },
+  {
+    name: "Ikechukwu Nwaogu",
+    role: "Team Member",
+    img: "/images/Ikechukwu_Nwaogu.jpg"
+  },
+  {
+    name: "Anthonia Duru",
+    role: "Team Member",
+    img: "/images/Anthonia_Duru.JPG"
   }
 ];
 
 function StatCard({ stat }) {
   return (
     <div className="flex-1 bg-white rounded-lg shadow-sm p-6 text-center">
-      <div className="text-3xl md:text-4xl font-extrabold text-[var(--color-primary)]">{stat.value}</div>
-      <div className="mt-2 text-sm text-[var(--color-text-secondary)]">{stat.label}</div>
+      <div className="text-3xl md:text-4xl font-extrabold text-primary">{stat.value}</div>
+      <div className="mt-2 text-sm text-text-secondary">{stat.label}</div>
     </div>
   );
 }
@@ -60,7 +90,7 @@ function TeamCard({ member }) {
       </div>
       <div className="p-4">
         <div className="font-semibold text-lg text-[#3E3E3E]">{member.name}</div>
-        <div className="text-sm text-[var(--color-text-secondary)]">{member.role}</div>
+        <div className="text-sm text-text-secondary">{member.role}</div>
       </div>
     </div>
   );
@@ -73,6 +103,7 @@ export default function About() {
 
       {/* HERO */}
       <section className="relative">
+      <Container>
         <div className="mx-auto max-w-[1440px] px-6 md:px-0">
           <div className="w-full h-[360px] md:h-[520px] rounded-sm overflow-hidden">
             <img
@@ -82,18 +113,20 @@ export default function About() {
             />
           </div>
         </div>
+        </Container>
       </section>
 
       {/* Rest of the component remains the same... */}
       <section className="py-16">
+      <Container>
         <div className="mx-auto max-w-[1440px] px-6 md:px-0">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
             <div>
-              <h1 className="font-display font-extrabold text-[40px] leading-[42.5px] text-[var(--color-primary)] mb-4">
+              <h1 className="font-display font-extrabold text-[40px] leading-[42.5px] text-primary mb-4">
                 About IbaFest
               </h1>
-              <p className="text-[20px] leading-[24px] text-[var(--color-text-secondary)] max-w-3xl">
-                Ìbà Fest (Ibadan Book & Arts Festival) celebrates storytelling,
+              <p className="text-[20px] leading-[24px] text-text-secondary max-w-3xl">
+                IbaFest (Ibadan Book & Arts Festival) celebrates storytelling,
                 creative learning, and cultural exchange. Rooted in Ibadan's
                 rich literary legacy, we host events, support libraries, and
                 create platforms for writers, artists, and communities to
@@ -103,14 +136,14 @@ export default function About() {
 
             <div>
               <div className="bg-white rounded-lg p-6 shadow-sm">
-                <h3 className="font-semibold text-lg mb-3">Our Vision</h3>
-                <p className="text-[var(--color-text-secondary)]">
+                <h3 className="font-semibold text-primary text-lg mb-3">Our Vision</h3>
+                <p className="text-text-secondary">
                   To be Africa’s most influential cultural platform for transforming society through literature, arts, education, and creative innovation.
                 </p>
 
                 <div className="mt-6">
-                  <h3 className="font-semibold text-lg mb-3">Our Mission</h3>
-                <p className="text-[var(--color-text-secondary)]">
+                  <h3 className="font-semibold text-primary text-lg mb-3">Our Mission</h3>
+                <p className="text-text-secondary">
                   We celebrate stories, empower creativity, and amplify voices to strengthen literacy, foster innovation, grow the creative economy, and advance equitable access to education and cultural resources.
                 </p>
                 </div>
@@ -118,10 +151,26 @@ export default function About() {
             </div>
           </div>
         </div>
+        </Container>
+      </section>
+
+      <section className="relative">
+      <Container>
+        <div className="mx-auto max-w-[1440px] px-6 md:px-0">
+          <div className="w-full h-[360px] md:h-[520px] rounded-sm overflow-hidden">
+            <img
+              src="/images/about-hero2.jpg"
+              alt="IbaFest — community of readers and creatives"
+              className="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+        </Container>
       </section>
 
       {/* KEY STATS */}
       <section className="py-12 bg-gray-50">
+      <Container>
         <div className="mx-auto max-w-[1440px] px-6 md:px-0">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
             {stats.map((s) => (
@@ -129,52 +178,58 @@ export default function About() {
             ))}
           </div>
         </div>
+        </Container>
       </section>
 
       {/* TIMELINE */}
       <section className="py-16">
+      <Container>
         <div className="mx-auto max-w-[1440px] px-6 md:px-0">
-          <h2 className="font-display font-extrabold text-[32px] md:text-[40px] text-[var(--color-primary)] mb-6">
+          <h2 className="font-display font-extrabold text-[32px] md:text-[40px] text-primary mb-6">
             Our journey
           </h2>
 
           <div className="space-y-6">
             {timeline.map((t) => (
-              <div key={t.year} className="flex gap-6 items-start">
+              <div key={t.year} className="flex text-primary gap-6 items-start">
                 <div className="w-20 flex-none">
                   <div className="text-sm font-semibold text-[var(--color-primary)]">{t.year}</div>
                 </div>
-                <div className="flex-1 text-[var(--color-text-secondary)]">{t.text}</div>
+                <div className="flex-1 text-text-secondary">{t.text}</div>
               </div>
             ))}
           </div>
         </div>
+        </Container>
       </section>
 
       {/* TEAM */}
       <section className="py-16 bg-white">
+      <Container>
         <div className="mx-auto max-w-[1440px] px-6 md:px-0">
-          <h2 className="font-display font-extrabold text-[32px] md:text-[40px] text-[var(--color-primary)] mb-6">
+          <h2 className="font-display font-extrabold text-[32px] md:text-[40px] text-primary mb-6">
             Meet the team
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
             {team.map((m) => (
               <TeamCard key={m.name} member={m} />
             ))}
           </div>
         </div>
+        </Container>
       </section>
 
       {/* CTA */}
       <section className="py-16 bg-gray-50">
+      <Container>
         <div className="mx-auto max-w-[1440px] px-6 md:px-0">
           <div className="bg-white rounded-lg p-8 md:p-12 shadow-md flex flex-col md:flex-row items-center justify-between gap-6">
             <div>
-              <h3 className="font-display font-extrabold text-xl md:text-2xl text-[var(--color-primary)]">
+              <h3 className="font-display font-extrabold text-xl md:text-2xl text-primary">
                 Join us in building the next chapter
               </h3>
-              <p className="text-[var(--color-text-secondary)] mt-2 max-w-xl">
+              <p className="text-text-secondary mt-2 max-w-xl">
                 Partner, volunteer, donate books, or register for events — your
                 involvement helps turn ideas into impact across communities.
               </p>
@@ -182,18 +237,19 @@ export default function About() {
 
             <div className="flex gap-4">
               <a href="/register">
-                <button className="rounded-md bg-[var(--color-primary)] text-white px-6 py-3 md:px-8 md:py-4 font-medium">
+                <button className="rounded-md bg-primary text-white px-6 py-3 md:px-8 md:py-4 font-medium">
                   Register now
                 </button>
               </a>
               <a href="/donations">
-                <button className="rounded-md border border-[var(--color-primary)] text-[var(--color-primary)] px-6 py-3 md:px-8 md:py-4 font-medium bg-white">
+                <button className="rounded-md border border-primary text-primary px-6 py-3 md:px-8 md:py-4 font-medium bg-white">
                   Donate / Sponsor
                 </button>
               </a>
             </div>
           </div>
         </div>
+        </Container>
       </section>
 
       <Footer />

@@ -12,7 +12,7 @@ import { getHero, getEvents, getPrograms, getPodcasts } from '@/services/api'
 
 const TicketPromo = () => (
   <section className="mt-12">
-    <Link to="/register" className="block group">
+    <Link to="#register" className="block group">
       <div className="relative overflow-hidden rounded-lg bg-gradient-accent p-8 md:p-12 text-white">
         <div className="relative z-10">
           <h3 className="font-display font-bold text-2xl md:text-3xl mb-2">
@@ -158,7 +158,7 @@ const Home = () => {
             <div className="flex justify-center">
               <Button
                 variant="primary"
-                onClick={() => window.location.href = '/register'}
+                onClick={() => window.location.href = '#register'}
                 className="w-full md:w-auto md:px-12"
               >
                 Register for IbaFest 2025

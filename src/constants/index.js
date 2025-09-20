@@ -25,7 +25,7 @@ export const API_CONFIG = {
 // Navigation Links
 export const NAV_LINKS = [
   { label: 'About', href: '/about' },
-  { label: 'Events & Highlights', href: '/#events' },
+  { label: 'Highlights', href: '/highlights' },
   { label: 'Projects', href: '#projects' },
   { label: 'Donations', href: '/donations' },
   { label: 'Partnerships & Collaborations', href: '/partnerships' }
