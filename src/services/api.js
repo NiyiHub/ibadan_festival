@@ -219,13 +219,13 @@ export const getPodcasts = async () => {
       {
         id: 1,
         title: "IbaFest Podcast Episode 1",
-        image: "/images/podcast-1.png",
+        image: "/images/podcast-1.jpg",
         spotifyUrl: "https://open.spotify.com/episode/example-1"
       },
       {
         id: 2,
         title: "IbaFest Podcast Episode 2",
-        image: "/images/podcast-2.png",
+        image: "/images/podcast-2.jpg",
         spotifyUrl: "https://open.spotify.com/episode/example-2"
       }
     ]
