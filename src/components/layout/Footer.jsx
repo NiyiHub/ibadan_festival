@@ -63,7 +63,7 @@ const Footer = () => {
 
               {/* Copyright - Desktop */}
               <div className="hidden md:block text-sm text-gray-300">
-                © 2025 NoirLedge Publishing. All rights reserved.
+                © 2025 Ibadan Book and Arts Festival. All rights reserved.
               </div>
             </div>
 

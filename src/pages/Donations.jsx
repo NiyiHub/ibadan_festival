@@ -11,7 +11,7 @@ const Donations = () => {
 
       {/* Hero Section */}
       <HeroSection
-        titlee="Donate a Book"
+        titlee="Donate"
         subtitle="Contribute to support our quest to be Africa’s most influential cultural platform for transforming society through literature, arts, education, and creative innovation. "
         image="/images/donate-hero.jpg"
         variant="centered"

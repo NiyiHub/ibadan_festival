@@ -111,7 +111,7 @@ const Home = () => {
         description={hero.body}
         image={null}
         ctaText={hero.ctaText}
-        ctaHref="/register"
+        ctaHref="#register"
         variant="default"
         overlay="gradient"
         customAlignment={true}
@@ -134,7 +134,7 @@ const Home = () => {
                 title={events.heroEvent.title}
                 subtitle={events.heroEvent.subtitle}
                 image={events.heroEvent.image}
-                href={`/${events.heroEvent.slug}`}
+                href={events.heroEvent.slug}
               />
             </div>
 
@@ -149,8 +149,7 @@ const Home = () => {
                 IbaFest 2025: The Inaugural Edition
               </h2>
               <p className="text-text-secondary max-w-4xl mx-auto text-sm md:text-base">
-                IbaFest makes its grand debut in October 2025 with a full week of inspiring events 
-                celebrating literature, culture, and creative innovation in Ibadan.
+                IbaFest makes its grand debut in October 2025 with a full lineup of inspiring events celebrating literature, culture, and creative innovation in Ibadan.
               </p>
             </div>
 
