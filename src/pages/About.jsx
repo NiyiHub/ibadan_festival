@@ -107,7 +107,7 @@ export default function About() {
         <div className="mx-auto max-w-[1440px] px-6 md:px-0">
           <div className="w-full h-[360px] md:h-[520px] rounded-sm overflow-hidden">
             <img
-              src="/images/about-hero.jpg"
+              src="/images/about-hero2.jpg"
               alt="IbaFest — community of readers and creatives"
               className="w-full h-full object-cover"
             />
@@ -159,7 +159,7 @@ export default function About() {
         <div className="mx-auto max-w-[1440px] px-6 md:px-0">
           <div className="w-full h-[360px] md:h-[520px] rounded-sm overflow-hidden">
             <img
-              src="/images/about-hero2.jpg"
+              src="/images/about-hero3.jpg"
               alt="IbaFest — community of readers and creatives"
               className="w-full h-full object-cover"
             />

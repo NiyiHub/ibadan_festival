@@ -15,6 +15,7 @@ import LiteracyLibraries from '@/pages/LiteracyLibraries'
 import CreativeEconomy from '@/pages/CreativeEconomy'
 import Highlights from '@/pages/Highlights'
 import HighlightDetail from '@/pages/HighlightDetail'
+import Volunteer from '@/pages/Volunteer'
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Route path="/partnerships/thank-you" element={<PartnershipsThankYou />} />
           <Route path="/register" element={<Registration />} />
           <Route path="/registration/thank-you" element={<RegistrationThankYou />} />
+          <Route path="/volunteer" element={<Volunteer />} />
           <Route path="/annual-festival" element={<AnnualFestival />} />
           <Route path="/bi-monthly" element={<BiMonthly />} />
           <Route path="/literacy-libraries" element={<LiteracyLibraries />} />

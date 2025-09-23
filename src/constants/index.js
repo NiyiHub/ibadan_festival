@@ -19,6 +19,7 @@ export const API_CONFIG = {
     DONATIONS: '/api/forms/donations/',
     PARTNERSHIPS: '/api/forms/partnerships/',
     REGISTRATIONS: '/api/forms/registrations/',
+    VOLUNTEER: '/api/forms/volunteer/',
     NEWSLETTER: '/api/forms/newsletter/',
   }
 }
@@ -28,6 +29,7 @@ export const NAV_LINKS = [
   { label: 'About', href: '/about' },
   { label: 'Highlights', href: '/highlights' },
   { label: 'Projects', href: '#projects' },
+  { label: 'Volunteer', href: '/volunteer' },
   { label: 'Donations', href: '/donations' },
   { label: 'Partnerships & Collaborations', href: '/partnerships' }
 ]
@@ -36,6 +38,7 @@ export const NAV_LINKS = [
 export const FOOTER_LINKS = [
   { label: 'Projects', href: '#projects' },
   { label: 'What\'s on', href: '#whats-on' },
+  { label: 'Volunteer', href: '/volunteer' },
   { label: 'Donations', href: '/donations' },
   { label: 'Partnerships & Collaborations', href: '/partnerships' }
 ]

@@ -190,14 +190,14 @@ const mockHighlights = [
       The evening ended on a musical note, with Dr Adegbola at the keyboard alongside his childhood friend, Anjola Aboderin, with whom he began playing music at age 12. The duo’s performance delighted the audience, offering a glimpse into the polymath’s enduring passion for sound.
       </p>
 
-      <img src="/images/highlights/adegbola/6.jpg" alt="Women writers workshop session" class="w-full h-100 object-cover rounded-lg my-6" />
+      <img src="/images/highlights/adegbola/8.jpg" alt="Women writers workshop session" class="w-full h-100 object-cover rounded-lg my-6" />
 
       <h3>Looking Ahead to IbaFest</h3>
       <p>In his closing remarks, Festival Director Servio Gbadamosi thanked the audience and described the conversation as inspiring. “The opportunity to hear Dr Adegbola speak about his journey is a gift,” he said, recalling Professor Niyi Osundare’s earlier counsel at a previous IbaFest event: “Against all odds, keep hope alive.” <br>
       Gbadamosi invited the public to attend the first Ibadan Book and Arts Festival, which will take place on October 24 and 25, 2025, at the University of Ibadan. The festival will feature writers, artists, performers, and thinkers from across Nigeria and beyond. “It will be a gathering to celebrate literature, art, and culture in Ibadan, a city with a proud intellectual and creative tradition,” he said. More details, he added, will be announced in the coming weeks.
       </p>
 
-      <img src="/images/highlights/adegbola/7.jpg" alt="Women writers workshop session" class="w-full h-100 object-cover rounded-lg my-6" />
+      <img src="/images/highlights/adegbola/9.jpg" alt="Women writers workshop session" class="w-full h-100 object-cover rounded-lg my-6" />
     `,
     image: "/images/highlights/adegbola/main.jpg",
     date: "2025-08-23",

@@ -110,7 +110,7 @@ const Home = () => {
         title={hero.title}
         description={hero.body}
         image={null}
-        ctaText={hero.ctaText}
+        // ctaText={hero.ctaText}
         ctaHref="#register"
         variant="default"
         overlay="gradient"
