@@ -45,7 +45,7 @@ export default function AnnualFestival() {
           />
           <div className="mt-6">
             <div className="flex flex-col sm:flex-row sm:items-start gap-4">
-              <a href="#register">
+              <a href="https://forms.gle/LaJbzXmFgQHbMa7c9">
                 <button className="rounded-md bg-primary text-white px-6 py-3 md:px-8 md:py-4 font-medium">
                   Register now
                 </button>
@@ -114,7 +114,7 @@ export default function AnnualFestival() {
           />
 
           <div className="mt-8">
-            <a href="#register">
+            <a href="https://forms.gle/LaJbzXmFgQHbMa7c9">
               <button className="rounded-md bg-primary text-white px-6 py-3 md:px-8 md:py-4 font-medium">
                 Register now
               </button>

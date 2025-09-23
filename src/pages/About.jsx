@@ -236,7 +236,7 @@ export default function About() {
             </div>
 
             <div className="flex gap-4">
-              <a href="/register">
+              <a href="https://forms.gle/LaJbzXmFgQHbMa7c9">
                 <button className="rounded-md bg-primary text-white px-6 py-3 md:px-8 md:py-4 font-medium">
                   Register now
                 </button>

@@ -215,7 +215,7 @@ const HighlightDetail = () => {
                     View All Reports
                   </Button>
                 </Link>
-                <Link to="/register">
+                <Link to="https://forms.gle/LaJbzXmFgQHbMa7c9">
                   <Button variant="primary" size="sm">
                     Register for IbaFest
                   </Button>

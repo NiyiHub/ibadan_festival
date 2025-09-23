@@ -140,17 +140,17 @@ export const getEvents = async () => {
       grid: [
         {
           title: "BI-MONTHLY EVENTS",
-          image: "/images/event-1.png",
+          image: "/images/BI-MONTHLY EVENTS.jpg",
           slug: "bi-monthly"
         },
         {
           title: "LITERACY & LIBRARIES",
-          image: "/images/event-2.png",
+          image: "/images/Literacy Libraries.jpg",
           slug: "literacy-libraries"
         },
         {
           title: "CREATIVE ECONOMY FORUMS",
-          image: "/images/event-3.png",
+          image: "/images/CREATIVE ECONOMY FORUMS.jpg",
           slug: "creative-economy"
         }
       ]
@@ -220,13 +220,13 @@ export const getPodcasts = async () => {
         id: 1,
         title: "IbaFest Podcast Episode 1",
         image: "/images/podcast-1.jpg",
-        spotifyUrl: "https://open.spotify.com/episode/example-1"
+        youtubeUrl: "https://www.youtube.com/watch?v=Re9c-AO_g-Q&list=PLgfnxApctW0FO3HFOgeY0I3nAv8JCZbmO&index=37"
       },
       {
         id: 2,
         title: "IbaFest Podcast Episode 2",
         image: "/images/podcast-2.jpg",
-        spotifyUrl: "https://open.spotify.com/episode/example-2"
+        youtubeUrl: "https://www.youtube.com/watch?v=lKODnq0VyKU&list=PLgfnxApctW0FO3HFOgeY0I3nAv8JCZbmO&index=36"
       }
     ]
   }

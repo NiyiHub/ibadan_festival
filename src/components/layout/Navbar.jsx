@@ -36,7 +36,7 @@ const Navbar = () => {
 
               {/* Register Button */}
               <Link
-                to="#register"
+                to="https://forms.gle/LaJbzXmFgQHbMa7c9"
                 className="inline-block px-5 py-2 rounded-full bg-primary text-white font-bold text-sm transition-all hover:bg-primary-dark hover:shadow-lg hover:-translate-y-0.5"
               >
                 Register

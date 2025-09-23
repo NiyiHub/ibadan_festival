@@ -29,14 +29,14 @@ export default function BiMonthly() {
       <Container>
         <div className="mx-auto max-w-[1440px] px-6 md:px-0">
           <img
-            src="/images/event-1.png"
+            src="/images/BI-MONTHLY EVENTS.jpg"
             alt="Bi-Monthly Events hero"
             className="w-full h-[420px] md:h-[560px] object-cover rounded-sm"
           />
 
           <div className="mt-6">
             <div className="flex flex-col sm:flex-row sm:items-start gap-4">
-              <a href="#register">
+              <a href="https://forms.gle/LaJbzXmFgQHbMa7c9">
                 <button className="rounded-md bg-primary text-white px-6 py-3 md:px-8 md:py-4 font-medium">
                   Register now
                 </button>
@@ -61,7 +61,7 @@ export default function BiMonthly() {
           </h3>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {["/images/podcast-1.png", "/images/podcast-2.png", "/images/podcast-1.png"].map((img, i) => (
+            {["/images/podcast-1.jpg", "/images/podcast-2.jpg", "/images/podcast-1.jpg"].map((img, i) => (
               <div key={i} className="rounded-md overflow-hidden shadow-sm">
                 <img
                   src={img}

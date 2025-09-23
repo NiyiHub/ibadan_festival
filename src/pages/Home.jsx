@@ -14,7 +14,7 @@ import { getHighlights } from '@/services/highlightsService'
 
 const TicketPromo = () => (
   <section className="mt-12">
-    <Link to="#register" className="block group">
+    <Link to="https://forms.gle/LaJbzXmFgQHbMa7c9" className="block group">
       <div className="relative overflow-hidden rounded-lg bg-gradient-accent p-8 md:p-12 text-white">
         <div className="relative z-10">
           <h3 className="font-display font-bold text-2xl md:text-3xl mb-2">
@@ -110,8 +110,8 @@ const Home = () => {
         title={hero.title}
         description={hero.body}
         image={null}
-        // ctaText={hero.ctaText}
-        ctaHref="#register"
+        ctaText={hero.ctaText}
+        ctaHref="https://forms.gle/LaJbzXmFgQHbMa7c9"
         variant="default"
         overlay="gradient"
         customAlignment={true}
@@ -162,7 +162,7 @@ const Home = () => {
             <div className="flex justify-center">
               <Button
                 variant="primary"
-                onClick={() => window.location.href = '#register'}
+                onClick={() => window.location.href = 'https://forms.gle/LaJbzXmFgQHbMa7c9'}
                 className="w-full md:w-auto md:px-12"
               >
                 Register for IbaFest 2025
@@ -197,7 +197,7 @@ const Home = () => {
                     key={podcast.id}
                     title={podcast.title}
                     image={podcast.image}
-                    spotifyUrl={podcast.spotifyUrl}
+                    youtubeUrl={podcast.youtubeUrl}
                   />
                 ))}
               </div>

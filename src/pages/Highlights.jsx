@@ -203,7 +203,7 @@ const Highlights = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a 
-                href="/register" 
+                href="https://forms.gle/LaJbzXmFgQHbMa7c9" 
                 className="px-8 py-3 bg-white text-primary rounded-lg font-semibold hover:bg-gray-100 transition-colors"
               >
                 Register for IbaFest 2025
