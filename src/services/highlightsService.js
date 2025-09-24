@@ -5,6 +5,38 @@ import { API_CONFIG } from '@/constants'
 const mockHighlights = [
   {
     id: 1,
+    title: "In Search of Home: Oko Owi Ocho Reads from Now I Sing God into Stones in Ibadan",
+    excerpt: "In a soul-stirring evening of reflection and cultural resonance, the Ibadan Book and Arts Festival (IbaFest), in partnership with Noirledge Publishing, and Sevhage Publishers, hosted Nigerian poet, and performer Oko Owi Ocho for a book reading and conversation on July 22, 2025. The event, held at Noirledge Publishing’s office in Ibadan, drew an enthusiastic audience of readers, writers, and cultural enthusiasts eager to experience his latest work, Now I Sing God into Stones.",
+    content: `
+      <p>In a soul-stirring evening of reflection and cultural resonance, the Ibadan Book and Arts Festival (IbaFest), in partnership with Noirledge Publishing, and Sevhage Publishers, hosted Nigerian poet, and performer Oko Owi Ocho for a book reading and conversation on July 22, 2025. The event, held at Noirledge Publishing’s office in Ibadan, drew an enthusiastic audience of readers, writers, and cultural enthusiasts eager to experience his latest work, Now I Sing God into Stones. <br>
+      The collection, Ocho explained, is deeply rooted in his Idoma heritage and personal journey. “Everything I have written for the past twelve, thirteen years has been about a search for the self, asking myself why don’t I feel at home everywhere I go? This new title is a return to my own ancient, ancestral memory,” he said. Divided into four sections—Home and History, Singing God into Stones at the Border of Grief, Epiphany of gods Coming Home Through My Dreams, and I Open My Body to the Trick of Passion—the poems travel between memory and myth, cultural excavation and existential questioning. He reflected that “most of these poems come to me, and I write. I think my poems have actually given more meanings to my life than me actually giving meanings to my poems.”
+      .</p>
+      
+      <img src="/images/highlights/oko_owi/1.jpg" alt="Mobile library van in a rural community" class="w-full h-100 object-cover rounded-lg my-6" />
+    
+      <p>Moderated by Kayode Sanni, the conversation illuminated the emotional depths behind the collection. Reflecting on the personal pain expressed in the poem I Have Built Pyramids, Ocho described it as “a way of locking myself out of the world” and an attempt to interrogate why “my pain was unkind to me.” Even the title, he revealed, emerged from a journey of healing, evolving from an earlier idea, “Origin of the Shrine of Laughter,” into a testament of restoration. “I feel like I was looking for healing. I was also trying to understand my own pain, and these poems actually spoke a lot to me about whatever pain I’m going through,” he shared.</p>
+
+      <img src="/images/highlights/oko_owi/2.jpg" alt="Mobile library van in a rural community" class="w-full h-100 object-cover rounded-lg my-6" />
+      
+      <p>Known off the stage as Oko Owoicho, Ocho is a poet, performance artist, and literary administrator, whose career has been shaped by his passion for Pan-Africanism and decolonial thought. His work, spanning the dialogue between modernity and African authenticity, has earned him accolades including the Poets in Nigeria Award of Excellence for his poem “Zeyani” in 2018 and second prize in the Korea–Nigeria Poetry Prize the same year. He has presented critical papers at major platforms, including the SOAS Conference on Decoloniality at the University of London. His first chapbook, We Will Sing Water, interrogated collective historical trauma in a postmodernist world, while Now I Sing God Into Stones extends this inquiry into ancestral memory, displacement, and the tensions between village and city life in modern Africa.</p>
+      
+      <img src="/images/highlights/oko_owi/3.jpg" alt="Mobile library van in a rural community" class="w-full h-100 object-cover rounded-lg my-6" />
+ 
+      <p>The book reading was one of a series of build-up events leading to the inaugural edition of the Ibadan Book and Arts Festival (Fest) scheduled to take place in October 2025. IbaFest is an annual celebration of African literature, creativity, and cultural dialogue. Rooted in Ibadan—a city renowned for its literary and cultural heritage—the festival brings together writers, artists, scholars, and cultural leaders to explore the power of stories and the potential of the Creative and Cultural Industries to transform education, community, and national development. <br>
+      The evening was more than a book reading—it was a communion of voices and histories, where Ocho’s dynamic performance blurred the line between poetry and ritual, inviting the audience into the creative process that birthed the collection. As the event closed, it affirmed the power of literature to reconnect, reimagine, and restore—an ethos that IbaFest seeks to embody as it builds toward its much-anticipated debut later this year.</p>
+      
+      <img src="/images/highlights/oko_owi/4.jpg" alt="Mobile library van in a rural community" class="w-full h-100 object-cover rounded-lg my-6" />
+    `,
+    image: "/images/highlights/oko_owi/main.jpg",
+    date: "2025-07-22",
+    readTime: "6 min read",
+    category: "Event Report",
+    slug: "In-search-of-home-oko-owi-ocho-reads-from-now-i-sing-god-into-stones-in-ibadan",
+    author: "Ibafest Team",
+    tags: ["Ibadan", "literacy"]
+  },
+  {
+    id: 2,
     title: "“We Have No Country Yet!” — Niyi Osundare Stirs Ibadan at Invocations of the Word",
     excerpt: "In a stirring prelude to the inaugural Ibadan Book and Arts Festival (IbaFest), the city of Ibadan played host to a remarkable literary gathering tagged Invocations of the Word: A Day of Poetry and Conversations with Niyi Osundare. Held on Saturday, August 16, 2025, at RovingHeights Bookstore, Bodija, Ibadan, the event brought together book lovers, creatives, scholars, and cultural leaders across the Cultural and Creative Industries (CCI) to celebrate the power of storytelling and reflect on the state of the nation.",
     content: `
@@ -55,38 +87,6 @@ const mockHighlights = [
     slug: "we-have-no-country-yet-Niyi-Osundare-stirs-ibadan-at-invocations-of-the-word",
     author: "Temiloluwa Ibitomi",
     tags: ["literature", "ibadan"]
-  },
-  {
-    id: 2,
-    title: "In Search of Home: Oko Owi Ocho Reads from Now I Sing God into Stones in Ibadan",
-    excerpt: "In a soul-stirring evening of reflection and cultural resonance, the Ibadan Book and Arts Festival (IbaFest), in partnership with Noirledge Publishing, and Sevhage Publishers, hosted Nigerian poet, and performer Oko Owi Ocho for a book reading and conversation on July 22, 2025. The event, held at Noirledge Publishing’s office in Ibadan, drew an enthusiastic audience of readers, writers, and cultural enthusiasts eager to experience his latest work, Now I Sing God into Stones.",
-    content: `
-      <p>In a soul-stirring evening of reflection and cultural resonance, the Ibadan Book and Arts Festival (IbaFest), in partnership with Noirledge Publishing, and Sevhage Publishers, hosted Nigerian poet, and performer Oko Owi Ocho for a book reading and conversation on July 22, 2025. The event, held at Noirledge Publishing’s office in Ibadan, drew an enthusiastic audience of readers, writers, and cultural enthusiasts eager to experience his latest work, Now I Sing God into Stones. <br>
-      The collection, Ocho explained, is deeply rooted in his Idoma heritage and personal journey. “Everything I have written for the past twelve, thirteen years has been about a search for the self, asking myself why don’t I feel at home everywhere I go? This new title is a return to my own ancient, ancestral memory,” he said. Divided into four sections—Home and History, Singing God into Stones at the Border of Grief, Epiphany of gods Coming Home Through My Dreams, and I Open My Body to the Trick of Passion—the poems travel between memory and myth, cultural excavation and existential questioning. He reflected that “most of these poems come to me, and I write. I think my poems have actually given more meanings to my life than me actually giving meanings to my poems.”
-      .</p>
-      
-      <img src="/images/highlights/oko_owi/1.jpg" alt="Mobile library van in a rural community" class="w-full h-100 object-cover rounded-lg my-6" />
-    
-      <p>Moderated by Kayode Sanni, the conversation illuminated the emotional depths behind the collection. Reflecting on the personal pain expressed in the poem I Have Built Pyramids, Ocho described it as “a way of locking myself out of the world” and an attempt to interrogate why “my pain was unkind to me.” Even the title, he revealed, emerged from a journey of healing, evolving from an earlier idea, “Origin of the Shrine of Laughter,” into a testament of restoration. “I feel like I was looking for healing. I was also trying to understand my own pain, and these poems actually spoke a lot to me about whatever pain I’m going through,” he shared.</p>
-
-      <img src="/images/highlights/oko_owi/2.jpg" alt="Mobile library van in a rural community" class="w-full h-100 object-cover rounded-lg my-6" />
-      
-      <p>Known off the stage as Oko Owoicho, Ocho is a poet, performance artist, and literary administrator, whose career has been shaped by his passion for Pan-Africanism and decolonial thought. His work, spanning the dialogue between modernity and African authenticity, has earned him accolades including the Poets in Nigeria Award of Excellence for his poem “Zeyani” in 2018 and second prize in the Korea–Nigeria Poetry Prize the same year. He has presented critical papers at major platforms, including the SOAS Conference on Decoloniality at the University of London. His first chapbook, We Will Sing Water, interrogated collective historical trauma in a postmodernist world, while Now I Sing God Into Stones extends this inquiry into ancestral memory, displacement, and the tensions between village and city life in modern Africa.</p>
-      
-      <img src="/images/highlights/oko_owi/3.jpg" alt="Mobile library van in a rural community" class="w-full h-100 object-cover rounded-lg my-6" />
- 
-      <p>The book reading was one of a series of build-up events leading to the inaugural edition of the Ibadan Book and Arts Festival (Fest) scheduled to take place in October 2025. IbaFest is an annual celebration of African literature, creativity, and cultural dialogue. Rooted in Ibadan—a city renowned for its literary and cultural heritage—the festival brings together writers, artists, scholars, and cultural leaders to explore the power of stories and the potential of the Creative and Cultural Industries to transform education, community, and national development. <br>
-      The evening was more than a book reading—it was a communion of voices and histories, where Ocho’s dynamic performance blurred the line between poetry and ritual, inviting the audience into the creative process that birthed the collection. As the event closed, it affirmed the power of literature to reconnect, reimagine, and restore—an ethos that IbaFest seeks to embody as it builds toward its much-anticipated debut later this year.</p>
-      
-      <img src="/images/highlights/oko_owi/4.jpg" alt="Mobile library van in a rural community" class="w-full h-100 object-cover rounded-lg my-6" />
-    `,
-    image: "/images/highlights/oko_owi/main.jpg",
-    date: "2025-07-22",
-    readTime: "6 min read",
-    category: "Event Report",
-    slug: "In-search-of-home-oko-owi-ocho-reads-from-now-i-sing-god-into-stones-in-ibadan",
-    author: "Ibafest Team",
-    tags: ["Ibadan", "literacy"]
   },
   {
     id: 3,

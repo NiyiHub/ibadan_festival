@@ -24,47 +24,52 @@ const timeline = [
 const team = [
   {
     name: "Servio Gbadamosi",
-    role: "Founder & Festival Director",
+    role: "Festival Director",
     img: "/images/Servio_Gbadamosi.jpg"
   },
   {
+    name: "Su'eddie Vershima Agema",
+    role: "Associate Director",
+    img: "/images/Su'eddie_Vershima_Agema.jpg"
+  },
+  {
+    name: "Ikechukwu Nwaogu",
+    role: "Associate Director",
+    img: "/images/Ikechukwu_Nwaogu.jpg"
+  },
+  {
     name: "Kayode Sanni",
-    role: "Program Curator",
+    role: "Program Lead",
     img: "/images/Kayode_Sanni.jpg"
   },
   {
     name: "Solomon Muyiwa Ogungbenro",
-    role: "Community & Partnerships",
+    role: "Production Manager",
     img: "/images/Solomon_Muyiwa_Ogungbenro.jpg"
   },
   {
     name: "Temiloluwa Peculiar Ibitomi",
-    role: "Community & Partnerships",
+    role: "Communications Lead",
     img: "/images/Temiloluwa_Peculiar_Ibitomi.jpg"
   },
   {
-    name: "Su'eddie Vershima Agema",
-    role: "Team Member",
-    img: "/images/Su'eddie_Vershima_Agema.jpg"
-  },
-  {
     name: "Rukayat Amudah",
-    role: "Team Member",
+    role: "Administartive Manager",
     img: "/images/Rukayat_Amudah.jpg"
   },
   {
     name: "Ocheni Kazeem Oneshojo",
-    role: "Team Member",
+    role: "Community & Partnerships",
     img: "/images/Ocheni_Kazeem_Oneshojo.jpg"
   },
   {
-    name: "Ikechukwu Nwaogu",
-    role: "Team Member",
-    img: "/images/Ikechukwu_Nwaogu.jpg"
+    name: "Ope Oyetunji",
+    role: "Community & Partnerships",
+    img: "/images/ope_oyetunji.jpg"
   },
   {
     name: "Anthonia Duru",
-    role: "Team Member",
+    role: "Volunteer Coordinator",
     img: "/images/Anthonia_Duru.JPG"
   }
 ];
@@ -126,11 +131,9 @@ export default function About() {
                 About IbaFest
               </h1>
               <p className="text-[20px] leading-[24px] text-text-secondary max-w-3xl">
-                IbaFest (Ibadan Book & Arts Festival) celebrates storytelling,
-                creative learning, and cultural exchange. Rooted in Ibadan's
-                rich literary legacy, we host events, support libraries, and
-                create platforms for writers, artists, and communities to
-                connect — nurturing the next generation of cultural leaders.
+                Ibadan Book and Arts Festival (IbaFest) is a vibrant celebration of African literature, creativity, and cultural dialogue. Rooted in the historic city of Ibadan, IbaFest brings together writers, artists, readers, educators, and change-makers to explore the power of stories and the potential of the Creative and Cultural Industries to shape education, community, and national development. <br></br>
+                Through an annual festival and year-round programming, IbaFest nurtures literacy, promotes artistic excellence, supports library development, and empowers the next generation of cultural leaders.
+
               </p>
             </div>
 

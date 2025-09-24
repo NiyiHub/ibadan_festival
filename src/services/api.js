@@ -117,8 +117,8 @@ export const getHero = async () => {
     // Return mock data for now during development
     return {
       title: "Reviving Legacy. Celebrating Culture. Inspiring Futures.",
-      body: "Ibadan Book and Arts Festival (IbaFest) is a vibrant celebration of African literature, creativity, and cultural dialogue. Rooted in the historic city of Ibadan, IbaFest brings together writers, artists, readers, educators, and change-makers to explore the power of stories and the potential of the Creative and Cultural Industries to shape education, community, and national development.",
-      ctaText: "Secure a wristband",
+      body:"Ibadan Book and Arts Festival (IbaFest) is a vibrant celebration of African literature, creativity, and cultural dialogue. Rooted in the historic city of Ibadan, IbaFest brings together writers, artists, readers, educators, and change-makers to explore the power of stories and the potential of the Creative and Cultural Industries to shape education, community, and national development.",
+      ctaText: "Register",
       heroImage: "/images/hero-annual.jpg"
     }
   }
